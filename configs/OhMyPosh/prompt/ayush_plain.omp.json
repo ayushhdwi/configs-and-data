@@ -1,0 +1,145 @@
+{
+    "final_space": true,
+    "console_title": true,
+    "console_title_style": "template",
+    "console_title_template": "{{if .Root}}root :: {{end}}{{.Shell}} :: {{.Folder}}",
+    "blocks": [
+        {
+            "type": "prompt",
+            "newline": true,
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "session",
+                    "style": "powerline",
+                    "foreground": "#fdba00",
+                    "properties": {
+                        "user_info_separator": "<#fafafa> @ </>",
+                        "display_default": false,
+                        "display_host": false,
+                        "postfix": " (19BIT0236)<#fafafa> in</>",
+                        "prefix": "<#fafafa> </>"
+                    }
+                },
+                {
+                    "type": "path",
+                    "style": "plain",
+                    "foreground": "#33dd2d",
+                    "properties": {
+                        "style": "agnoster",
+                        "folder_separator_icon": "<#7a7a7a>   </>",
+                        "home_icon": "",
+                        "folder_icon": "",
+                        "enable_hyperlink" : true
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "foreground": "#ff9248",
+                    "properties": {
+                        "prefix": " ",
+                        "postfix": " ",
+                        "display_status": true,
+                        "ahead_color": "red",
+                        "behind_color": "green",
+                        "working_color": "red",
+                        "staging_color": "yellow",
+                        "local_changes_color": "yellow",
+                        "ahead_and_behind_color": "red",
+                        "color_background": false,
+                        "display_stash_count": true,
+                        "display_upstream_icon": true,
+                        "status_colors_enabled": true,
+                        "github_icon": "  "
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "root",
+                    "style": "plain",
+                    "foreground": "#ff94df",
+                    "properties": {
+                        "root_icon": "admin mode",
+                        "postfix": "<#fafafa> |</>"
+                    }
+                },
+                {
+                    "type": "dart",
+                    "style": "powerline",
+                    "foreground": "#06A4CE",
+                    "properties": {
+                        "prefix": " \uE798 ",
+                        "postfix": "<#fafafa> |</>"
+                    }
+                },
+                {
+                    "type": "java",
+                    "style": "powerline",
+                    "foreground": "#96E072",
+                    "properties": {
+                        "prefix": " \uE738 ",
+                        "postfix": "<#fafafa> |</>"
+
+                    }
+                },
+                {
+                    "type": "node",
+                    "style": "powerline",
+                    "foreground": "#6CA35E",
+                    "properties": {
+                        "prefix": " \uE718 ",
+                        "postfix": "<#fafafa> |</>"
+                    }
+                },
+                {
+                    "type": "python",
+                    "style": "plain",
+                    "foreground": "#4584b6",
+                    "properties": {
+                        "prefix": " \uE235 ",
+                        "display_version": false,
+                        "display_mode": "context",
+                        "display_virtual_env": true,
+                        "postfix": "<#fafafa> |</>"
+                    }
+                },
+                {
+                    "type": "executiontime",
+                    "style": "plain",
+                    "foreground": "#FFCE5C",
+                    "properties": {
+                        "always_enabled": true,
+                        "threshold": 500,
+                        "style": "roundrock",
+                        "prefix": " \uf252 ",
+                        "postfix": ""
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "type": "exit",
+                    "style": "powerline",
+                    "foreground": "#27d627",
+                    "properties": {
+                        "display_exit_code": false,
+                        "always_enabled": true,
+                        "error_color": "red",
+                        "prefix": ""
+                    }
+                }
+            ]
+        }
+    ]
+}
