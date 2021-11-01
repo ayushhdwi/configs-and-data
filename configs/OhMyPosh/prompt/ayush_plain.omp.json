@@ -24,7 +24,7 @@
                 {
                     "type": "path",
                     "style": "plain",
-                    "foreground": "#33dd2d",
+                    "foreground": "#b9ef7c",
                     "properties": {
                         "style": "agnoster",
                         "folder_separator_icon": "<#7a7a7a>   </>",
@@ -51,7 +51,7 @@
                         "display_stash_count": true,
                         "display_upstream_icon": true,
                         "status_colors_enabled": true,
-                        "github_icon": "  "
+                        "github_icon": "on   "
                     }
                 }
             ]
@@ -65,7 +65,7 @@
                     "style": "plain",
                     "foreground": "#ff94df",
                     "properties": {
-                        "root_icon": "admin mode",
+                        "root_icon": "admin",
                         "postfix": "<#fafafa> |</>"
                     }
                 },
@@ -136,7 +136,7 @@
                         "display_exit_code": false,
                         "always_enabled": true,
                         "error_color": "red",
-                        "prefix": ""
+                        "prefix": "\uf871 "
                     }
                 }
             ]
